@@ -1,16 +1,38 @@
-# React + Vite
+# World D3 Barplot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An animated bar chart built with React and D3 showing the geographic distribution of students in the first cohort of the [D3 + React dataviz course](https://www.react-graph-gallery.com/react-d3-dataviz-course).
 
-Currently, two official plugins are available:
+![hero](src/assets/hero.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Animated bars with a cubic ease-out entrance on load
+- Hover tooltips showing each country's percentage of the cohort
+- Highlighted bar for Canada with a callout annotation
+- Confetti burst when the animation completes
+- Summary badges showing total student count and number of countries represented
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+- [React 19](https://react.dev) for rendering
+- [D3 7](https://d3js.org) for scales
+- [Vite 8](https://vite.dev) for bundling and dev server
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+## Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the dev server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run deploy` | Build and deploy to GitHub Pages |
